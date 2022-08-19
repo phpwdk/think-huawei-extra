@@ -1,0 +1,27 @@
+{
+  "name": "phpwdk/think-huawei-extra",
+  "description": "华为云相关扩展",
+  "require": {
+    "php": ">=8.0",
+    "ext-iconv": "*",
+    "guzzlehttp/guzzle": "^6.2 || ^7.0",
+    "monolog/monolog": "^1.25.0 || ^2.0"
+  },
+  "require-dev": {
+    "roave/security-advisories": "dev-latest"
+  },
+  "autoload": {
+    "psr-4": {
+      "Obs\\": "obs/",
+      "think\\huawei\\extra\\": "src/"
+    }
+  },
+  "extra": {
+    "think": {
+      "services": [
+        "think\\huawei\\extra\\ObsService"
+      ]
+    }
+  },
+  "license": "MIT"
+}
